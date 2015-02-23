@@ -6,7 +6,7 @@
 	{
 		protected static function getFacadeAccessor()
 		{
-			return 'Canducci\ZipCode\ZipCode';
+			return 'zipcode';
 		}
 	}
 }
