@@ -41,6 +41,11 @@ At the end of `config/app.php` add `'Cep' => 'Canducci\Cep\Facade\Cep'` to the `
 ```
 
 ##How to Use
+Add namespace:
+
+```PHP
+use Canducci\ZipCode\Facades\ZipCode;
+```
 
 To use is very simple, pass the ZIP and calls the various types of returns, like this:
 
