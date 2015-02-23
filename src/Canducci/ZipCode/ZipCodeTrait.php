@@ -1,6 +1,6 @@
 <?php namespace Canducci\ZipCode {
 
-    trait ZipCodeTraits {
+    trait ZipCodeTrait {
         /**
          * @param $value
          * @return $this
