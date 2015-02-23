@@ -1,4 +1,4 @@
-# CANDUCCI CEP
+# CANDUCCI ZIPCODE (CEP BRASIL)
 
 __Web Service provided by http://viacep.com.br/__
 
@@ -11,20 +11,20 @@ __Web Service provided by http://viacep.com.br/__
 In the `require` key of `composer.json` file add the following
 
 ```PHP
-"canducci/cep": "dev-master"
+"canducci/zipcodelaravel5": "dev-master"
 ```
 
 Run the Composer update comand
 
     $ composer update
 
-In your `config/app.php` add `'Canducci\Cep\CepServiceProvider'` to the end of the `providers` array
+In your `config/app.php` add `'Canducci\ZipCode\Providers\ZipCodeServiceProvider'` to the end of the `providers` array
 
 ```PHP
 'providers' => array(
     ...,
     'Illuminate\Workbench\WorkbenchServiceProvider',
-    'Canducci\Cep\CepServiceProvider',
+    'Canducci\ZipCode\Providers\ZipCodeServiceProvider',
 
 ),
 ```
@@ -35,7 +35,7 @@ At the end of `config/app.php` add `'Cep' => 'Canducci\Cep\Facade\Cep'` to the `
 'aliases' => array(
     ...,
     'View'       => 'Illuminate\Support\Facades\View',
-    'Cep'        => 'Canducci\Cep\Facade\Cep',
+    'ZipCode'    => 'Canducci\ZipCode\Facades\ZipCode',
 
 ),
 ```
